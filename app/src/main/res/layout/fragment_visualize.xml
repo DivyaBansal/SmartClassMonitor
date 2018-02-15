@@ -1,0 +1,94 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dj.test.visualizeFrag">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:background="#f5f3c9">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/codbtn">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="People Count"
+                android:id="@+id/peepbtn"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:background="#fa7961" />
+
+            <Button
+                android:text="Temperature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/temp"
+                android:layout_below="@+id/peepbtn"
+                android:layout_alignEnd="@+id/peepbtn"
+                android:layout_alignParentStart="true"
+                android:background="#8695b1" />
+
+            <Button
+            android:text="Humidity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/humid"
+            android:layout_below="@+id/temp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+                android:background="#25c4c4" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Luminosity"
+            android:id="@+id/lumin"
+            android:layout_below="@+id/humid"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+                android:background="#fcf374" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Oxidising Gas"
+            android:id="@+id/oxbtn"
+            android:layout_below="@+id/lumin"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+                android:background="#79ab88" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reducing Gas"
+            android:id="@+id/redbtn"
+            android:layout_below="@+id/oxbtn"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+                android:background="#f39c4c" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CO2"
+            android:id="@+id/codbtn"
+            android:layout_below="@+id/redbtn"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+                android:background="#d095a1" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>
